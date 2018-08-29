@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.paula.desafioandroid.view.MainActivity">
+
+    <TextView
+        android:id="@+id/projeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:textSize="20dp"
+        android:text="CadastroApp" />
+
+    <Button
+        android:id="@+id/btnCriarContato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Novo aluno..."
+        android:textSize="18dp"
+        android:layout_below="@+id/projeto"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtContadorContatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Total de Registros"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnCriarContato" />
+
+    <ScrollView
+        android:id="@+id/scrollViewContatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCriarContato"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="#a1a9ca">
+
+        <LinearLayout
+            android:id="@+id/objetosContatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
